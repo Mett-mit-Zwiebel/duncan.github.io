@@ -1,0 +1,137 @@
+/* 
+Farben:
+https://colorhunt.co/palette/222831393e4600adb5eeeeee
+*/
+
+
+body{
+    background-color: #222831;
+    color: #EEEEEE;
+    text-align: center;
+    margin: 0; /**margin und padding auf 0 standartmäßig, damit man weniger schreiben muss */
+    padding: 0;
+    font-family: 'Roboto', sans-serif;     /**Google fonts Schriftart verwenden*/
+    font-size: 16pt; /**Schriftgröße überall */
+    line-height: 150%; /**Abstand zwischen Zeilen*/
+}
+
+/**Einstellungen für allgemeine Tags */
+a:hover {
+    color: purple;
+}
+a{
+    color: lightblue;
+}
+ol{
+    text-align: center;
+    list-style-position: inside; /**macht die Nummern in die Mitte */
+}
+h2{
+    padding-top: 4%;
+    color:#00ADB5;
+}
+
+/**Titelbild */
+#frontpicture{
+    padding: 4% 8% 2% 8%;
+    max-width: 60%; /**maximale Breite des Objekts */
+    margin: auto;
+}
+
+/**Navbar oben*/
+.title{
+    color: #EEEEEE;
+    background-color: #393E46;
+    font-size:4vw; /**vw setzt die Größe anhand der Fenstergröße*/
+    display: flex; /**ermöglicht es Elemte im div leichter anzuordnen*/
+    padding-bottom: 0.2%;
+    font-weight: 700;
+    align-items: center;
+}
+.logo{
+    width: 6%;
+    height: 6%;
+    padding: 1%;
+}
+
+/**Einstellungen für den Text*/
+.introtext
+{
+    padding-top: 4%;
+    padding-left: 6%;
+    padding-right: 6%;
+    text-align: center;
+}
+
+/**Liste der Links zu den anderen Seiten */
+.tutolist{
+    margin-top: 4%;
+    margin-bottom: 8%;
+    list-style-type: none;
+}
+
+/**Navbar unten */
+.info{
+    color: #EEEEEE;
+    background-color: #00ADB5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+    list-style-type: none;
+    margin-top: 4%;
+}
+.infobutton{
+    display: inline-block;
+    padding: 0.8vw 2vw;
+    background-color: #393E46;
+    color: #EEEEEE;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: px;
+    display: flex;
+    align-items: center;
+    width: 16vw;
+    height: auto;
+}
+.infobutton:hover{
+    color: purple;
+}
+
+/**Kontaktpopup */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /**positioniert die Box in der Mitte */
+    width: 300px;
+    padding: 20px;
+    background-color: #393E46;
+    box-shadow: 0 2px 5px #000000; /**Schatten für die Box */
+    display: none;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/**Cookiebanner */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #393E46;
+    padding: 1.5vw;
+    text-align: center;
+}
+.cookie-banner button {
+    background-color: #00ADB5;
+    color: #EEEEEE;
+    padding: 0.8vw 1.4vw;
+    margin-left: 4%;
+    border: none;
+    cursor: pointer;
+}

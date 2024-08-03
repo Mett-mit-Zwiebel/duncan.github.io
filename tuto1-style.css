@@ -1,0 +1,103 @@
+/* 
+Farben:
+https://colorhunt.co/palette/222831393e4600adb5eeeeee
+*/
+
+body{
+    background-color: #222831;
+    color: #EEEEEE;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    line-height: 150%;
+}
+a:hover {
+    color: purple;
+}
+a{
+    color: lightblue;
+}
+p{
+    padding: 0% 8% 0% 8%;
+}
+h2{
+    padding-top: 4%;
+    color:#00ADB5;
+}
+h3{
+    padding-top: 6%;
+    color:#00ADB5;
+}
+.text{
+    padding-bottom: 4%;
+}
+.image{
+    margin: 4% 8% 2% 8%;
+    max-width: 60%;
+    border: 6px solid  #00ADB5;
+    border-radius: 10px;
+}
+.title{
+    color: #EEEEEE;
+    background-color: #393E46;
+    font-size:4vw;
+    display: flex;
+    padding-bottom: 0.2%;
+    font-weight: 700;
+    align-items: center;
+}
+.logo{
+    width: 6%;
+    height: 6%;
+    padding: 1%;
+}
+.info{
+    color: #EEEEEE;
+    background-color: #00ADB5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%;
+    list-style-type: none;
+    margin-top: 4%;
+}
+.tutolist{
+    margin-top: 4%;
+    margin-bottom: 8%;
+    list-style-type: none;
+}
+.infobutton:hover{
+    color: purple;
+}
+.infobutton{
+    display: inline-block;
+    padding: 0.8vw 2vw;
+    background-color: #393E46;
+    color: #EEEEEE;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: px;
+    display: flex;
+    align-items: center;
+    width: 16vw;
+    height: auto;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #393E46;
+    box-shadow: 0 2px 5px #000000;
+    display: none;
+}
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}

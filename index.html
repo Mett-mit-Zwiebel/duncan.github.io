@@ -1,8 +1,120 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    
-  </head>
-  <body>
-    Test
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="main-style.css">
+        <title>Rimworld Guide</title>
+
+        <!--Icon oben im Reiter-->
+        <link rel="icon" type="image/x-icon" href="Bilder/RimGuideklein.png">
+
+        <!--Für Schriftart von Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
+            rel="stylesheet">
+
+        <script src="scripts.js"></script> <!--Scripts einbinden-->
+    </head>
+
+    <body onload=cookiecheck()> <!--es wird nach cookies gesucht beim Laden der Seite-->
+        <!--Hier ist die Navbar oben an der Seite-->
+        <div class="title">
+            <img src="Bilder/RimGuideklein.png" alt="Rimworld Giude Logo"
+                class="logo">
+            Rimworld Guide
+        </div>
+
+        <!--Das ist das Titelbild-->
+        <div>
+            <img src="Bilder/frontimage.png" alt="Rimworld Logo by Pjotre"
+                id="frontpicture">
+        </div>
+
+        <!--Hier ist der Text auf der Seite-->
+        <div class="introtext">
+            <p>
+                RimWorld ist eine Science-Fiction-Kolonie-Simulation, in der
+                Spieler auf einem fernen Planeten mit gestrandeten Überlebenden
+                beginnen.
+                Sie müssen sich um die Bedürfnisse und Stimmungen der Kolonisten
+                kümmern, Beziehungen aufbauen oder beenden, Kämpfe gegen Feinde
+                führen, Strukturen bauen, Ressourcen sammeln und Tiere zähmen.
+                Das Spiel bietet zufällig generierte Ereignisse, die von einer
+                intelligenten Erzähler-KI gesteuert werden und die Geschichte
+                beeinflussen.
+                RimWorld ermöglicht es den Spielern, eine einzigartige
+                Geschichte des Überlebens, der Beziehungen und des Aufbaus zu
+                erleben, während sie den Planeten erkunden und ihre Kolonie
+                entwickeln.
+            </p>
+        </div>
+        <div class="introtext">
+            <p>
+                Du hast dir Rimworld gekauft und bist sofort nach dem Spielstart
+                überfordert oder du willst ein paar nützliche Tipps für den
+                Start haben, dann bist du hier genau richtig.
+                Ich werde dir in diesem Tutorial die Grundlagen für das Starten
+                einer neuen Kolonie näherbringen und dir ein paar Tipps und
+                Tricks zeigen, die ich beim Spielen gelernt habe.
+                <br><br>
+                Dieses Tutorial wird in mehrere Teile aufgeteilt sein und nicht
+                das abdecken, was im Tutorial des Spiels gezeigt wird, wie
+                grundlegende Steuerung und dergleichen.
+                <br><br>
+                Befor du mit den Tutorials startest befolge bitte diese
+                Schritte:
+            </p>
+            <ol style="padding-bottom: 4%;">
+                <li>Lades das Spiel herunter</li>
+                <li>Lade erstmal keine Mods herunter!</li>
+                <li>Starte das Spiel</li>
+                <li>Spiele das Tutorial</li>
+            </ol>
+            <p>
+                <br>Wir beginnen hier mit <b>Tutorial 1: Die Vorbereitung</b>.
+            </p>
+        </div>
+
+        <!--Das hier ist die Liste mit Links für die anderen Seiten-->
+        <div class="tutolist">
+            <li>Tutorails:</li>
+            <li><a href="tuto1.html"><br>Tutorial 1: Die Vorbereitung</a></li>
+            <li><a href="faq.html">Zum FAQ</a></li>
+        </div>
+
+        <!-- Das ist die Navbar ganz unten mit Buttons-->
+        <div class="info">
+            <a class="infobutton" target="_blank"
+                href="Dateien/Rimworld Guide.pdf"><img src="Bilder/pdf icon.png"
+                    style="height: 30px; width: 30px;">&ensp;PDFs</a>
+            <a class="infobutton" href="##" onclick=openPopup()><img
+                    src="Bilder/mail icon.png"
+                    style="height: 30px; width: 30px;">&ensp;Kontakt</a>
+            <a class="infobutton" target="_blank"
+                href="https://store.steampowered.com/app/294100/RimWorld/"><img
+                    src="Bilder/steam icon.png"
+                    style="height: 30px; width: 30px;">&ensp;Rimworld auf Steam</a>
+            <a class="infobutton" target="_blank"
+                href="https://www.youtube.com/@tynansylvester/featured"><img
+                    src="Bilder/youtube icon.png"
+                    style="height: 30px; width: 30px;">&ensp;Rimworld auf
+                Youtube</a>
+        </div>
+
+        <!-- Das ist das popup, das später mit Javascript sichtbar gemacht wird-->
+        <div id="popup" class="popup">
+            <span class="close-button" onclick=closePopup()>&times;</span>
+            <h2>Unser Kontakt</h2>
+            <p>rimguide@info.de</p>
+        </div>
+
+        <!-- Das ist das Cookiebanner das am Start der Seite angezeigt wird-->
+        <div class="cookie-banner">
+            Diese Webseite verwendet Cookies. Durch die Nutzung unserer Webseite
+            stimmst du der Verwendung von Cookies zu.
+            <button id="cookiebutton" onclick=acceptCookies()>Akzeptieren</button>
+        </div>
+    </body>
 </html>
